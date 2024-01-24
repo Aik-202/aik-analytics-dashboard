@@ -4,9 +4,14 @@ import {
     Route
 } from "react-router-dom";
 import './App.css'
+import { OverviewPage } from "./Pages";
 
 export default function App() {
   return (
-    <div>App</div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<OverviewPage />} ></Route>
+      </Routes>
+    </Router>
   )
 }
