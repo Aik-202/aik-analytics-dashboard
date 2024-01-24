@@ -108,7 +108,7 @@ export const topPlateform = [
         amount: 500000,
     },
 ]
-const chartdata = [
+export const chartdata = [
     {
         name: 'Jan',
         "Sales Value": 6.000,
