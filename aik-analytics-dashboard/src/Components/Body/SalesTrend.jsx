@@ -5,16 +5,16 @@ import { chartdata } from '../../Data/demo';
 export default function SalesTrend() {
     const valueFormatter = (number) => `$ ${(number)}.000`;
   return (
-    <Card>
+    <Card className='w-[50rem]'>
     <Title>Sales Trend</Title>
     <BarChart
-      className="mt-6"
+      className="mt-6 cursor-pointer"
       data={chartdata}
       index="name"
       categories={["Sales Value"]}
       colors={["#34CAA5"]}
       valueFormatter={valueFormatter}
-      yAxisWidth={50}
+      yAxisWidth={75}
       maxValue={50}
     />
   </Card>
