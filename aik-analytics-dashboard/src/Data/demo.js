@@ -190,24 +190,20 @@ export const dashboardList =[
         img1: infoIcon,
         title: 'About',
     },
+]
+export const bottomList =[
     {
-        id: 7,
-        img1: lightMode,
-        img2: darkMode,
-        title: 'Theme',
-    },
-    {
-        id: 8,
+        id: 1,
         img1: arrowRight,
         title: 'Home',
     },
     {
-        id: 9,
+        id: 2,
         img1: settingIcon,
         title: 'Settings',
     },
     {
-        id: 10,
+        id: 3,
         img1: logoutIcon,
         title: 'Log out',
     },
