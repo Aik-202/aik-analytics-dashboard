@@ -16,8 +16,11 @@ import { viewIcon } from '../../Data';
 
 export default function LastOrders() {
   return (
-    <Card className='w-[45rem] px-3 py-2'>
-    <Title>Last Orders</Title>
+    <Card className='w-[45rem] px-5 py-2'>
+    <Title className='flex flex-row justify-between'>
+      <p>Last Orders</p>
+      <p className='text-[#34CAA5]'>See All</p>
+    </Title>
     <Table className="mt-5">
       <TableHead>
         <TableRow>

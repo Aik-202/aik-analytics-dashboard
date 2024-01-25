@@ -124,7 +124,7 @@ module.exports = {
       pattern: /^(fill-(?:slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose)-(?:50|100|200|300|400|500|600|700|800|900|950))$/,
     },
     // We add this flatMap to the safelist. You can pass more than one color if needed. E.g. "[#ffcc33]","[#161616]"
-    ...["[#34CAA5]"].flatMap((customColor) => [
+    ...["[#34CAA5]", "[#6160DC]", "[#54C5EB]", "[#FFB74A]", "[#FF4A55]"].flatMap((customColor) => [
       `bg-${customColor}`,
       `border-${customColor}`,
       `hover:bg-${customColor}`,
