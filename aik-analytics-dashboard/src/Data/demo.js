@@ -43,7 +43,7 @@ export const lastOrder = [
     },
 ]
 
-export const summary = [
+export const summaryList = [
     {
         id: 1,
         img: boxTick,

@@ -5,7 +5,7 @@ import { chartdata } from '../../Data/demo';
 export default function SalesTrend() {
     const valueFormatter = (number) => `$ ${(number)}.000`;
   return (
-    <Card className='w-[50rem]'>
+    <Card className='w-[45rem]'>
     <Title>Sales Trend</Title>
     <BarChart
       className="mt-6 cursor-pointer"
