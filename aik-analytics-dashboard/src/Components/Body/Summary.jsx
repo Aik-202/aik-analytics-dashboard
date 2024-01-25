@@ -6,7 +6,7 @@ import { loss, profit, trendingDown, trendingUp } from '../../Data'
 export default function Summary() {
   return (
     <section className='grid grid-cols-2 gap-5 pr-5'>
-      {summaryList.map((list) => <Card className='p-3 py-4 w-[250px]' key={list.id}>
+      {summaryList.map((list) => <Card className='p-3 py-4 w-[15rem]' key={list.id}>
         <figure className='flex flex-row justify-between items-center mb-4'>
           <img src={list.img} alt="card-icon" className='p-2 rounded-full border-[0.77px] 
         border-solid border-[#DADDDD]' />
@@ -17,7 +17,7 @@ export default function Summary() {
           <Metric>{list.total}</Metric>
         </div>
         <div className='flex flex-row justify-between items-center'>
-          <div className={`flex flex-row space-x-1 items-center rounded-full bg-opacity-[12%]
+          <div className={`flex flex-row space-x-1 self-center items-center rounded-full bg-opacity-[12%]
           ${list.state == 'profit' ? 'bg-[#34CAA5] text-[#34CAA5]'
           : 'bg-[#ED544E] text-[#ED544E]'}
           px-2 py-1 text-xs`}>
