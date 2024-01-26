@@ -1,4 +1,21 @@
-import { arrowRight, boxIcon, boxTick, coinIcon, cooper, corey, darkMode, dashboardIcon, discountIcon, infoIcon, jaydon, lightMode, logoutIcon, marcus, phillip, rotate, settingIcon, shoppingCart, trendUp, userIcon } from ".";
+import { arrowRight, 
+    boxIcon, 
+    boxTick, 
+    coinIcon, 
+    cooper, 
+    corey,
+    dashboardIcon, 
+    discountIcon, 
+    infoIcon, 
+    jaydon,  
+    logoutIcon, 
+    marcus, 
+    phillip, 
+    rotate, 
+    settingIcon, 
+    shoppingCart, 
+    trendUp, 
+    userIcon } from ".";
 
 export const lastOrder = [
     {
