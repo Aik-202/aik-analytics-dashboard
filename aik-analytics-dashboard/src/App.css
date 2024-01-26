@@ -15,6 +15,10 @@ section, div {
     animation: up-slide 2s;
 }
 
+.reveal.visible {
+    animation: up-slide2 1.5s;
+}
+
 p, span {
     animation: dim 2s;
 }
@@ -52,6 +56,16 @@ body {
 @keyframes up-slide {
     0% {
       transform: translateY(-30px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+}
+
+@keyframes up-slide2 {
+    0% {
+      transform: translateY(-10px);
     }
   
     100% {

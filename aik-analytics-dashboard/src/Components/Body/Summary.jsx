@@ -5,7 +5,7 @@ import { loss, profit, trendingDown, trendingUp } from '../../Data'
 
 export default function Summary() {
   return (
-    <section className='flex items-center justify-center'>
+    <section className='reveal flex items-center justify-center'>
       <section className='grid grid-cols-1 md:grid-cols-2 gap-5'>
         {summaryList.map((list) => <Card className='p-3 py-4 w-[18rem] md:w-[15rem] 
         lg:w-[14rem] xl:w-[15rem] hover:shadow-md hover:shadow-[#B2ABAB] hover:dark:shadow-lg hover:dark:shadow-[#111827]' key={list.id}>

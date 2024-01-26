@@ -2,6 +2,24 @@ import React from 'react'
 import { LastOrders, NavBar, SalesTrend, Summary, TopBar, TopPlateform } from '../Components'
 
 export default function OverviewPage() {
+    React.useEffect(() => {
+        const reveal = document.querySelectorAll('.reveal')
+    
+      //Reavel Elements  function
+      window.addEventListener('scroll', () => {reveal.forEach((element) => {
+        const height = window.innerHeight
+        const revealTop = element.getBoundingClientRect().top;
+        const revealPosition = 180;
+    
+        if (revealTop < height - revealPosition){
+            element.classList.add('visible');
+        } else {
+            element.classList.remove('visible')
+        }
+      })} )
+    
+      }, [])
+
   return (
     <section className='flex flex-row w-full dark:bg-[#1f2937]'>
         <NavBar />

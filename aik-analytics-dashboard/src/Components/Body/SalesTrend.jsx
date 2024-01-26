@@ -5,7 +5,7 @@ import { chartdata } from '../../Data/demo';
 export default function SalesTrend() {
     const valueFormatter = (number) => `${(number)}.000`;
   return (
-    <Card className='h-max w-full lg:w-[30rem] xl:w-[45rem] font-semibold'>
+    <Card className='reveal h-max w-full lg:w-[30rem] xl:w-[45rem] font-semibold'>
     <div className='flex flex-col space-y-5 md:space-y-0 md:flex-row 
     justify-between items-center'>
       <Title className='font-semibold'>Sales Trend</Title>

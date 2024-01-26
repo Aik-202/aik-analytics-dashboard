@@ -4,7 +4,7 @@ import { topPlateform } from '../../Data/demo'
 
 export default function TopPlateform() {
   return (
-    <section className='w-full lg:w-[40%] px-5 py-3 flex flex-col space-y-5 rounded-xl 
+    <section className='reveal w-full lg:w-[40%] px-5 py-3 flex flex-col space-y-5 rounded-xl 
     shadow-sm bg-white dark:bg-[#111827]'>
     <Title className='flex flex-row justify-between'>
       <span className='font-semibold'>Top Platform</span>
