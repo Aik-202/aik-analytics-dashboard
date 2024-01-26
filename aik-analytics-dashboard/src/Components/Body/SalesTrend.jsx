@@ -6,7 +6,7 @@ export default function SalesTrend() {
     const valueFormatter = (number) => `$ ${(number)}.000`;
   return (
     <Card className='h-max w-full lg:w-[30rem] xl:w-[45rem]'>
-    <div className='flex flex-row justify-between items-center'>
+    <div className='flex flex-col space-y-5 md:space-y-0 md:flex-row justify-between items-center'>
       <Title>Sales Trend</Title>
       <div className='flex flex-row space-x-5 items-center'>
         <p>Short by : </p>
