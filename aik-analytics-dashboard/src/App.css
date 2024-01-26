@@ -11,6 +11,14 @@
     cursor: pointer;
 }
 
+section, div {
+    animation: up-slide 2s;
+}
+
+p, span {
+    animation: dim 2s;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -38,4 +46,29 @@ body {
     /* transform: rotate(35deg); */
     margin-left: -40px;
     margin-top: 2px;
+}
+
+/* animation */
+@keyframes up-slide {
+    0% {
+      transform: translateY(-30px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+}
+
+@keyframes dim {
+    0% {
+      opacity: 0%;
+    }
+  
+    50% {
+      opacity: 50%;
+    }
+  
+    100% {
+      opacity: 100%;
+    }
   }
