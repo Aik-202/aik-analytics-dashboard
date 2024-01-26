@@ -7,7 +7,7 @@ export default function Summary() {
   return (
     <section className='flex items-center justify-center'>
       <section className='grid grid-cols-1 md:grid-cols-2 gap-5'>
-        {summaryList.map((list) => <Card className='p-3 py-4 w-full md:w-[15rem] lg:w-[14rem] xl:w-[15rem]' key={list.id}>
+        {summaryList.map((list) => <Card className='p-3 py-4 w-[18rem] md:w-[15rem] lg:w-[14rem] xl:w-[15rem]' key={list.id}>
           <figure className='flex flex-row justify-between items-center mb-4'>
             <img src={list.img} alt="card-icon" className='p-2 rounded-full border-[0.77px] 
           border-solid border-[#DADDDD] dark:border-[#1f2937]' />

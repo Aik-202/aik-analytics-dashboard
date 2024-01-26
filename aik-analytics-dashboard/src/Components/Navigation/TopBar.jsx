@@ -15,7 +15,7 @@ export default function TopBar() {
           <input type="search" name="search" id="search" placeholder='Search...' 
           className='px-3 pl-8 py-2 border-solid w-full md:w-auto border-[1px] 
           border-[#DADDDD] bg-white rounded-3xl dark:bg-[#1f2937] 
-          dark:text-white dark:border-[#111827] focus:outline-none'/>
+          dark:text-white dark:border-[#d1d5db] focus:outline-none'/>
           <img src={searchIcon} alt="search-icon" className='absolute top-3 left-2' />
         </div>
 
