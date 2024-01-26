@@ -18,17 +18,17 @@ export default function LastOrders() {
   return (
     <Card className='w-full lg:w-[40rem] xl:w-[45rem]'>
     <Title className='flex flex-row justify-between'>
-      <span>Last Orders</span>
-      <span className='text-[#34CAA5]'>See All</span>
+      <span className='font-semibold'>Last Orders</span>
+      <span className='text-[#34CAA5] font-medium'>See All</span>
     </Title>
     <Table className="mt-5">
       <TableHead>
         <TableRow>
-          <TableHeaderCell className='w-[30rem]'>Name</TableHeaderCell>
-          <TableHeaderCell>Date</TableHeaderCell>
-          <TableHeaderCell>Amount</TableHeaderCell>
-          <TableHeaderCell>Status</TableHeaderCell>
-          <TableHeaderCell>Invoice</TableHeaderCell>
+          <TableHeaderCell className='w-[30rem] text-[#9CA4AB] text-base font-medium'>Name</TableHeaderCell>
+          <TableHeaderCell className='text-[#9CA4AB] text-base font-medium'>Date</TableHeaderCell>
+          <TableHeaderCell className='text-[#9CA4AB] text-base font-medium'>Amount</TableHeaderCell>
+          <TableHeaderCell className='text-[#9CA4AB] text-base font-medium'>Status</TableHeaderCell>
+          <TableHeaderCell className='text-[#9CA4AB] text-base font-medium'>Invoice</TableHeaderCell>
         </TableRow>
       </TableHead>
       <TableBody>
@@ -36,19 +36,19 @@ export default function LastOrders() {
           <TableRow key={item.id}>
             <TableCell className='flex flex-row space-x-3 items-center'>
               <img src={item.img} alt={item.name} />
-              <p>{item.name}</p>
+              <p className='text-[#3A3F51] text-base font-medium dark:text-[#4b5563]'>{item.name}</p>
             </TableCell>
             <TableCell>
-              <Text>{item.date}</Text>
+              <Text className='text-[#737373] font-normal text-base'>{item.date}</Text>
             </TableCell>
             <TableCell>
-              <Text>${item.amount.toLocaleString()}</Text>
+              <Text className='text-[#0D062D] text-base font-medium'>${item.amount.toLocaleString()}</Text>
             </TableCell>
             <TableCell className={`${item.status == 'Paid' ? 'text-[#34CAA5]' 
-            : 'text-[#ED544E]'}`}>{item.status}</TableCell>
+            : 'text-[#ED544E]'} text-base font-normal`}>{item.status}</TableCell>
             <TableCell className='flex flex-row space-x-3 items-center'>
               <img src={viewIcon} alt="view-icon" />
-              <p>View</p>
+              <p className='text-[#0D062D] font-normal text-sm dark:text-[#4b5563]'>View</p>
             </TableCell>
           </TableRow>
         ))}

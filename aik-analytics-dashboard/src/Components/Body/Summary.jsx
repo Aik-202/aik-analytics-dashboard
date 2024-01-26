@@ -14,8 +14,8 @@ export default function Summary() {
             <img src={list.state == 'profit' ? profit : loss} alt={list.state} />
           </figure>
           <div className='flex flex-col space-y-3 mb-5'>
-            <Subtitle className='text-lg'>{list.title}</Subtitle>
-            <Metric>{list.total}</Metric>
+            <Subtitle className='text-lg font-medium'>{list.title}</Subtitle>
+            <Metric className='text-[#3A3F51] text-2xl'>{list.total}</Metric>
           </div>
           <div className='flex flex-row justify-between items-center'>
             <div className={`flex flex-row space-x-1 self-center items-center rounded-full bg-opacity-[12%]
@@ -25,7 +25,7 @@ export default function Summary() {
               <img src={list.state == 'profit' ? trendingUp : trendingDown} alt="trend-icon" />
               <p>23,5%</p>
             </div>
-            <Text>vs. previous month</Text>
+            <Text className='text-[#606060] font-normal text-sm'>vs. previous month</Text>
             {/* <p></p> */}
           </div>
         </Card>)}

@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 /* eslint-disable max-len */
-module.exports = {
+export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -35,9 +35,9 @@ module.exports = {
             DEFAULT: "#EDF2F7", // gray-200
           },
           content: {
-            subtle: "#9ca3af", // gray-400
+            subtle: "#898989", // gray-400
             DEFAULT: "#6b7280", // gray-500
-            emphasis: "#374151", // gray-700
+            emphasis: "#26282C", // gray-700
             strong: "#111827", // gray-900
             inverted: "#ffffff", // white
           },
@@ -93,7 +93,7 @@ module.exports = {
         "tremor-default": ["0.875rem", {
           lineHeight: "1.25rem"
         }],
-        "tremor-title": ["1.125rem", {
+        "tremor-title": ["18px", {
           lineHeight: "1.75rem"
         }],
         "tremor-metric": ["1.875rem", {
