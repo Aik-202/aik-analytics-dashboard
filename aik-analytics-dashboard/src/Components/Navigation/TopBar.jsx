@@ -38,14 +38,14 @@ export default function TopBar() {
   localStorage.setItem("pageTheme", JSON.stringify(theme));
   }
   return (
-    <nav className='reveal flex flex-col-reverse space-y-reverse space-y-5 md:space-y-0 
-    md:flex-row justify-between w-full px-3 py-3 lg:bg-[#F7F8FA] lg:dark:bg-[#131A2B]
+    <nav className='reveal flex flex-col-reverse space-y-reverse space-y-5 lg:space-y-0 
+    lg:flex-row justify-between w-full px-3 py-3 lg:bg-[#F7F8FA] lg:dark:bg-[#131A2B]
     md:border-[1px] md:border-solid md:border-[#EBECF2] md:items-center 
     dark:border-[#111827] text-[#26282C]'>
       <p className='text-xl dark:text-white font-semibold'>Dashboard</p>
 
       <div className='flex flex-col-reverse space-y-reverse space-y-5 
-      md:space-y-0 md:flex-row lg:space-x-5 items-start md:items-center dark:text-white'>
+      md:space-y-0 md:flex-row md:space-x-3 lg:space-x-5 items-start md:items-center dark:text-white'>
 
         <figure className='md:hidden self-end flex flex-row space-x-6 items-center bg-white 
         dark:bg-[#1f2937] border-[1px] border-solid border-transparent 
