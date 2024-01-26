@@ -1,7 +1,6 @@
 //Dashboard Icons
 export {default as logo} from './images/icons/logo.png'
 export {default as dashboardIcon} from './images/icons/dashboard-icon.png'
-export {default as dashWhite} from './images/icons/dash-white.png'
 export {default as trendUp} from './images/icons/trend-up.png'
 export {default as userIcon} from './images/icons/user-icon.png'
 export {default as boxIcon} from './images/icons/box-icon.png'
