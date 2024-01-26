@@ -4,11 +4,11 @@ import { topPlateform } from '../../Data/demo'
 
 export default function TopPlateform() {
   return (
-    <section className='w-[40%] px-5 py-3 flex flex-col space-y-5 rounded-lg 
+    <section className='w-full lg:w-[40%] px-5 py-3 flex flex-col space-y-5 rounded-xl 
     shadow-sm bg-white'>
     <Title className='flex flex-row justify-between'>
-      <p>Top Platform</p>
-      <p className='text-[#34CAA5]'>See All</p>
+      <span>Top Platform</span>
+      <span className='text-[#34CAA5]'>See All</span>
     </Title>
     {topPlateform.map((list) => <div key={list.id} className='flex flex-col space-y-3'>
       <Title>{list.name}</Title>

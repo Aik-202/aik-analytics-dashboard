@@ -3,11 +3,11 @@ import { arrowDown, calendarIcon, justin, notificationIcon, searchIcon } from '.
 
 export default function TopBar() {
   return (
-    <nav className='flex flex-row justify-between w-full px-3 py-3 bg-[#F7F8FA] 
-    border-[1px] border-solid border-[#EBECF2] items-center'>
+    <nav className='flex flex-col-reverse lg:flex-row justify-between w-full px-3 py-3 lg:bg-[#F7F8FA] 
+    lg:border-[1px] lg:border-solid lg:border-[#EBECF2] lg:items-center'>
       <p className='text-xl'>Dashboard</p>
 
-      <div className='flex flex-row space-x-5 items-center'>
+      <div className='flex flex-col-reverse lg:flex-row space-x-5 items-start lg:items-center'>
         <div className='relative'>
           <input type="search" name="search" id="search" placeholder='Search...' 
           className='px-3 pl-8 py-2 border-solid  

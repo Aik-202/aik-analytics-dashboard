@@ -29,10 +29,10 @@ module.exports = {
             emphasis: "#374151", // gray-700
           },
           border: {
-            DEFAULT: "#e5e7eb", // gray-200
+            DEFAULT: "#EDF2F7", // gray-200
           },
           ring: {
-            DEFAULT: "#e5e7eb", // gray-200
+            DEFAULT: "#EDF2F7", // gray-200
           },
           content: {
             subtle: "#9ca3af", // gray-400
