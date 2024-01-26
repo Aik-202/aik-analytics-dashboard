@@ -2,16 +2,6 @@ import React from 'react'
 import { arrowDown, calendarIcon, justin, notificationIcon, searchIcon } from '../../Data'
 
 export default function TopBar() {
-  const [other, setOther] = React.useState(false)
-  let theme = JSON.parse(localStorage.getItem("pageTheme"));
-  React.useEffect(() => {
-    if (theme === "DARK") {
-      setOther(true)
-    } else {
-      setOther(false)
-    }
-  }, [theme])
-  console.log(other)
   return (
     <nav className='flex flex-col-reverse space-y-reverse space-y-5 md:space-y-0 
     md:flex-row justify-between w-full px-3 py-3 lg:bg-[#F7F8FA] lg:dark:bg-[#131A2B]

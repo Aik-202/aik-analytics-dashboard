@@ -193,17 +193,17 @@ export const dashboardList =[
 ]
 export const bottomList =[
     {
-        id: 1,
+        id: 7,
         img1: arrowRight,
         title: 'Home',
     },
     {
-        id: 2,
+        id: 8,
         img1: settingIcon,
         title: 'Settings',
     },
     {
-        id: 3,
+        id: 9,
         img1: logoutIcon,
         title: 'Log out',
     },
