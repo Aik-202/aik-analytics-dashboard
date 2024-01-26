@@ -3,10 +3,10 @@
 I'm an aspiring MERN developer, having spent 1yr+ with Reactjs, I was very excited when a friend recommended this challenge for me, it's a great way to flex my skills, Thank you Geepay! So below is the breakdown of my process.
 
 ### Screenshot
-![](./aik-analytics-dashboard/src/Data/images/screenshots/gp-3.png)
-![](./aik-analytics-dashboard/src/Data/images/screenshots/gp-1.png)
-![](./aik-analytics-dashboard/src/Data/images/screenshots/gp-5.png)
-![](./aik-analytics-dashboard/src/Data/images/screenshots/gp-2.png)
+![gp-3](https://github.com/Aik-202/aik-analytics-dashboard/assets/92846131/b13f38e2-e049-44b3-881e-a2704b30fbbf)
+![gp-1](https://github.com/Aik-202/aik-analytics-dashboard/assets/92846131/ec4b489e-d7c2-46f8-95aa-575ffac35cb7)
+![gp-2](https://github.com/Aik-202/aik-analytics-dashboard/assets/92846131/d09d5217-50ba-4fb7-8649-352ffe162707)
+
 
 ## INITIAL SETUP: 
 - I used Vite to set up my development environment, it's light weight, and doesn't take time to set up. 
