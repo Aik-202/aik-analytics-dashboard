@@ -9,6 +9,16 @@
   <body onload="getTheme()">
     <main id="root" class="w-full"></main>
     <script type="module" src="/src/main.jsx"></script>
-    <script src="script.js" defer></script>
+    <script>
+      const getTheme = () => {
+      let theme = JSON.parse(localStorage.getItem("pageTheme"));
+      let element = document.body;
+      if (theme === "DARK") {
+        element.classList.toggle("dark");
+      } else {
+          element.classList.remove("dark");
+      }
+      }
+    </script>
   </body>
 </html>

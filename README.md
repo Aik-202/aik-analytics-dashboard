@@ -1,8 +1,14 @@
-Geepay's Analytic Dashboard Challenge With Vite,  Reactjs, Tremor and Tailwind CSS (Deployed with Vercel)
+# Geepay's Analytic Dashboard Challenge With Vite,  Reactjs, Tremor and Tailwind CSS (Deployed with Vercel)
 
 I'm an aspiring MERN developer, having spent 1yr+ with Reactjs, I was very excited when a friend recommended this challenge for me, it's a great way to flex my skills, Thank you Geepay! So below is the breakdown of my process.
 
-INITIAL SETUP: 
+### Screenshot
+![](./aik-analytics-dashboard/src/Data/images/screenshots/gp-3.png)
+![](./aik-analytics-dashboard/src/Data/images/screenshots/gp-1.png)
+![](./aik-analytics-dashboard/src/Data/images/screenshots/gp-5.png)
+![](./aik-analytics-dashboard/src/Data/images/screenshots/gp-2.png)
+
+## INITIAL SETUP: 
 - I used Vite to set up my development environment, it's light weight, and doesn't take time to set up. 
 - I proceeded to GitHub to create a repository for the project.
 - I added a vercel.json file, to enable live deployment with Vercel - I installed tailwind CSS, that's what I use for styling my pages
@@ -15,7 +21,7 @@ I've always written my own CSS, only recently did I start using Material UI for 
 - So I installed it using this command: ""
 - I took some time to go through the documentation, I'd always say using a library is like learning a new language 😅
 
-ACTUAL DEVELOPMENT
+## ACTUAL DEVELOPMENT
 - I started by adding the only page in the Page Folder, it's titled OverviewPage
 - I added components for the Navigation, that is the NavBar, NavItems and TopBar components
 - I also added components for each of the cards, that is the SalesTrend, Summary, LastOrders, TopPlatform components
