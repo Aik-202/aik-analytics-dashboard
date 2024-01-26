@@ -3,9 +3,9 @@ import { LastOrders, NavBar, SalesTrend, Summary, TopBar, TopPlateform } from '.
 
 export default function OverviewPage() {
   return (
-    <section className='flex flex-row w-full'>
+    <section className='flex flex-row w-full dark:bg-[#1f2937]'>
         <NavBar />
-        <section className='flex flex-col space-y-5 w-full pb-5 bg-[#FAFAFA]'>
+        <section className='flex flex-col space-y-5 w-full pb-5 bg-[#FAFAFA] dark:bg-[#1f2937]'>
             <TopBar />
             <section className='flex flex-col space-y-5'>
                 <section className='flex flex-col space-y-5 lg:space-y-0 lg:flex-row 

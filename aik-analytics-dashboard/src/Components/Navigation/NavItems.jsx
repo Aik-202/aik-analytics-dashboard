@@ -7,10 +7,20 @@ export default function NavItems() {
     // variable for dark mode
     let element = document.body;
 
+    // element.addEventListener('load', () => {
+    //     let getTheme = JSON.parse(localStorage.getItem("pageTheme"));
+
+    //     if (getTheme === "DARK") {
+    //     element.classList.toggle("dark");
+    //     } else {
+    //         element.classList.remove("dark");
+    //     }
+    // })
+
     //lightmode
     const light = () => {
         element.classList.remove("dark");
-        setMode(true);
+        setMode(false);
         //set theme
         var theme
         if (element.classList == "dark") {
@@ -35,11 +45,17 @@ export default function NavItems() {
     localStorage.setItem("pageTheme", JSON.stringify(theme));
     }
 
-    let getTheme = JSON.parse(localStorage.getItem("pageTheme"));
-
-    if (getTheme === "DARK") {
-    element.classList.toggle("dark");
-    }
+    
+    // const getTheme = () => {
+    //     let theme = JSON.parse(localStorage.getItem("pageTheme"));
+    //     let element = document.body;
+    //     if (theme === "DARK") {
+    //       element.classList.toggle("dark");
+    //     } else {
+    //         element.classList.remove("dark");
+    //     }
+    // }
+    
 
   return (
     <div className='flex flex-col justify-between h-full'>
@@ -47,19 +63,19 @@ export default function NavItems() {
             <ul className='flex flex-col space-y-6'>
             {dashboardList.map((list) => <li className={`border-[3px] border-solid 
             border-transparent w-full px-4
-            ${list.id == 1 ? 'border-r-[#0D062D]' : 'border-r-transparent'}
+            ${list.id == 1 ? 'border-r-[#0D062D] dark:border-r-white' : 'border-r-transparent'}
             `} key={list.id}>
                 <img src={list.img1} alt={list.title} />
             </li>)}
             </ul>
-            <figure className='flex flex-col space-y-6 items-center bg-white 
+            <figure className='flex flex-col space-y-6 items-center bg-white dark:bg-[#1f2937]
             rounded-full py-2 mx-2'>
-                <img src={lightMode} alt="light-mode" className={`
-                ${mode ? 'bg-transparent p-0 rounded-none' 
-                : 'bg-[#34CAA5] p-2 rounded-full'}`} onClick={light}/>
-                <img src={darkMode} alt="dark-mode" className={`
-                ${!mode ? 'bg-transparent p-0 rounded-none' 
-                : 'bg-[#34CAA5] p-2 rounded-full'}`} onClick={dark}/>
+                <img src={lightMode} alt="light-mode" className='bg-[#34CAA5] dark:bg-transparent p-2 
+                rounded-full' 
+                onClick={light}/>
+                <img src={darkMode} alt="dark-mode" className='bg-transparent dark:bg-white p-2 
+                rounded-full w-[40px]' 
+                onClick={dark}/>
             </figure>
         </div>
         <ul className='flex flex-col space-y-6 pb-3'>

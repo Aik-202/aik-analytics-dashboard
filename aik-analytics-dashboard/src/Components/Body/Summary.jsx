@@ -10,7 +10,7 @@ export default function Summary() {
         {summaryList.map((list) => <Card className='p-3 py-4 w-full md:w-[15rem] lg:w-[14rem] xl:w-[15rem]' key={list.id}>
           <figure className='flex flex-row justify-between items-center mb-4'>
             <img src={list.img} alt="card-icon" className='p-2 rounded-full border-[0.77px] 
-          border-solid border-[#DADDDD]' />
+          border-solid border-[#DADDDD] dark:border-[#1f2937]' />
             <img src={list.state == 'profit' ? profit : loss} alt={list.state} />
           </figure>
           <div className='flex flex-col space-y-3 mb-5'>
